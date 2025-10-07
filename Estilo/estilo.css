@@ -30,3 +30,40 @@ img{
     display: flex;
     border-radius: 70px;
 }
+main {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+article {
+    flex: 2; 
+    
+}
+
+aside {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    align-items: center;
+
+}
+aside img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* centraliza a imagem */
+    margin-top: 40%;
+}
+
+footer {
+     background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    
+}
