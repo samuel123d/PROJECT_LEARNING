@@ -1,0 +1,32 @@
+@charset "utf-8";
+body{
+    background-color: rgb(0, 0, 0);
+    font-style: normal;
+    color: #ff0000;
+    text-align: justify;
+}
+a{
+    color: #00ff3c;
+    text-decoration: none;
+
+}
+.Título{
+    color: rgb(0, 18, 158);
+    text-indent: 8em;
+}
+.Títuloo{
+    font-size: xx-large;
+    text-indent: 2em;
+}
+h2{
+    color: rgb(255, 138, 138);
+}
+p{
+    color: aquamarine;
+}
+img{
+    width: 10%;
+    height: 10%;
+    display: flex;
+    border-radius: 70px;
+}
