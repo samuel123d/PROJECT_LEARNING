@@ -6,10 +6,61 @@
     <title>LOGIN</title>
 </head>
 <!--conteúdo do site-->
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .login-container{
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 300px;
+        text-align: left;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        
+    }
+</style>
 <body>
-
+    <div class="login-container">
+    <h1 style="text-align: center;">LOGIN</h1>
+    
+        <h4>Login</h4>
+        <input type="text" id="username" name="username" required><br><br>
+        <h4>Senha</h4>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Entrar</button>
+   
+    </div>
 </body>
 </html>
 <!--script para o site-->
 <script>   
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede o envio do formulário
+
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Verifica se o nome de usuário e a senha estão corretos
+        if (username === 'admin' && password === 'password123') {
+            alert('Login bem-sucedido!');
+            // Redireciona para outra página ou realiza outras ações
+        } else {
+            alert('Nome de usuário ou senha incorretos. Tente novamente.');
+        }
+    });
 </script>
